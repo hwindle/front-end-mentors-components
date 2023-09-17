@@ -97,6 +97,109 @@ div.results-header-msg > p {
   padding-bottom: 1rem;
 } 
 
+/* results breakdown table */
+section.results-breakdown {
+  padding: 1.5rem;
+}
+
+section.results-breakdown > h4 {
+  font-size: 1.8rem;
+  color: var(--dark-blue-grey);
+  line-height: 2;
+}
+
+section.results-breakdown > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.results-data-item {
+  list-style-type: none;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+}
+
+.results-data-item > .test-title {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.results-data-item > .score {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-blue-grey);
+}
+
+.score .grey-100 {
+  color: rgb(150, 150, 150);
+}
+
+span.svg-logo {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* individual li icons */
+.results-data-item:first-child {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: var(--red);
+}
+
+.results-data-item:first-child > .svg-logo {
+  background-image: url('./assets/images/icon-reaction.svg');
+  color: var(--red);
+}
+
+.results-data-item:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: var(--orange-yellow);
+}
+
+.results-data-item:nth-child(2) > .svg-logo {
+  background-image: url('./assets/images/icon-memory.svg');
+  color: var(--orange-yellow);
+}
+
+.results-data-item:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: var(--green);
+}
+
+.results-data-item:nth-child(3) > .svg-logo {
+  background-image: url('./assets/images/icon-verbal.svg');
+  color: var(--green);
+}
+
+.results-data-item:last-child {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: var(--cobalt-blue);
+}
+
+.results-data-item:last-child > .svg-logo {
+  background-image: url('./assets/images/icon-visual.svg');
+  color: var(--cobalt-blue);
+}
+
+.btn-area > button {
+  background-color: var(--dark-blue-grey);
+  color: var(--white);
+  border-radius: var(--border-radius);
+  width: 100%;
+  margin: 1.5rem 0rem;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  font-size: 1.5rem;
+}
+
 
 /***
   Media Queries - desktop
@@ -109,6 +212,8 @@ div.results-header-msg > p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;   
+    /* shadow */
+    box-shadow: 0 0 15px var(--light-blue);
   }
 
   div.results-summary, section.results-header {
