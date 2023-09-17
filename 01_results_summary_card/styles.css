@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Hanken';
+  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 500 800;
+}
+
+:root {
+  --red: hsl();
+  --orange-yellow: hsl();
+  --green: hsl();
+  --cobalt-blue: hsl();
+  --gradient-light: hsl();
+  --gradient-darker: hsl();
+  --circle-color-1: hsl();
+  --circle-color-2: hsl();
+  /* neutral colours */
+  --white: hsl();
+  --light-blue: hsl();
+  --dark-blue-grey: hsl();
+  --light-lavendar: hsl();
+  /* fonts */
+  --font: 'Hanken', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* border radius */
+  --border-radius: 30px;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Hanken';
+}
