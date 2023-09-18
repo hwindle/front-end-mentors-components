@@ -135,7 +135,8 @@ section.results-breakdown > ul {
   color: var(--dark-blue-grey);
 }
 
-.score .grey-100 {
+.grey-100 {
+  padding: 0 0.5rem;
   color: rgb(150, 150, 150);
 }
 
