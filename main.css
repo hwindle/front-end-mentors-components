@@ -1,0 +1,12 @@
+main {
+  width: 80%;
+  margin: 0.8rem auto;
+  font-size: 18px;
+}
+
+h1 {
+  padding: 1rem;
+  line-height: 2;
+  text-align: center;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
