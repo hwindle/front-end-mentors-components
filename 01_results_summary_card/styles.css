@@ -200,20 +200,42 @@ span.svg-logo {
   font-size: 1.5rem;
 }
 
+.btn-area > button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(180deg, var(--gradient-light), var(--gradient-darker));
+}
 
 /***
-  Media Queries - desktop
+  Media Queries - tablet then desktop
 ****/
 @media screen and (min-width: 375px) {
   div.results-summary {
-    width: 50%;
+    width: 75%;
+    max-width: 600px;
+    margin: 2rem auto;
+    /* shadow */
+    box-shadow: hsla(241, 100%, 89%, 0.5) 0 10px 15px -3px,
+        0px 10px 10px -5px var(--light-blue);
+  }
+
+  div.results-summary, section.results-header {
+    border-radius: var(--border-radius);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.results-summary {
+    width: 65%;
+    max-width: 900px;
     margin: 2rem auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;   
     /* shadow */
-    box-shadow: 0 0 15px var(--light-blue);
+    box-shadow: hsla(241, 100%, 89%, 0.5) 0 10px 15px -3px,
+        0px 10px 10px -5px var(--light-blue);
+        
   }
 
   div.results-summary, section.results-header {
