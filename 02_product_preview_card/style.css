@@ -27,6 +27,10 @@ button.add-cart-btn {
   border-radius: 1rem;
 }
 
+button.add-cart-btn:hover {
+  background-color: #082c12;
+}
+
 section.details {
   padding: 1.6rem;
 }
