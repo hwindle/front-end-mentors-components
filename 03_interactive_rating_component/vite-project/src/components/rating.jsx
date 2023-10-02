@@ -7,7 +7,8 @@ function Rating() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [ratingNum, setRatingNum] = useState(0);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setIsSubmitted(true);
     // get ratingNum
     console.log(ratingNum);
@@ -39,7 +40,7 @@ function Rating() {
           5
         </li>
       </ul>
-      <button className="submit-rating" onClick={() => handleSubmit()} type='submit'>
+      <button className="submit-rating" onClick={handleSubmit} type='submit'>
         Submit
       </button>
     </div>
