@@ -1,0 +1,140 @@
+div.card {
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  margin: 10rem auto auto auto;
+  border-radius: 20px;
+  max-width: 355px;
+}
+
+header.logo {
+  background-color: var(--dark-grey);
+  border-radius: 40px;
+  background-image: url('../assets/images/icon-star.svg');
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+
+div.card h3 {
+  font-size: 1.8rem;
+  line-height: 0.7;
+  text-align: left;
+  font-weight: 700;
+}
+
+p.rating-text {
+  color: var(--light-grey);
+  text-align: left;
+}
+
+ul#rating-scale {
+  margin-left: -2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul#rating-scale > li {
+  list-style-type: none;
+  display: block;
+  cursor: pointer;
+  width: 4rem;
+  /* the height and padding-top control the
+  centering of the numbers in the circles */
+  height: 2.75rem;
+  padding-top: 1.25rem;
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+  border-radius: 100px;
+  /* number styling */
+  font-weight: 700;
+  /* for my poor vision, actual design nums are 15px/1rem */
+  font-size: 1.5rem;
+}
+
+ul#rating-scale > li:hover, ul#rating-scale > li:focus {
+  background-color: var(--light-grey);
+  transition: 0.9s;
+  color: white;
+}
+
+ul#rating-scale > li:active {
+  background-color: var(--orange);
+  transition: 0.3s;
+  color: white;
+}
+
+button.submit-rating {
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  color: white;
+  font-weight: 700;
+  border-radius: 100px;
+  border: none;
+}
+
+button.submit-rating:hover, button.submit-rating:focus, button.submit-rating:active {
+  background-color: white;
+  transition: 0.7s;
+  color: var(--orange);
+}
+
+/* thank you state elements - after clicking on submit */
+div.success-card {
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  margin: 10rem auto auto auto;
+  border-radius: 20px;
+  max-width: 355px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  /* gap: 1rem; */
+}
+
+img.success-img {
+  width: 50%;
+  height: auto;
+  align-self: center;
+}
+
+p.score-selection {
+  width: 60%;
+  align-self: center;
+  text-align: center;
+  background-color: var(--dark-grey);
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: var(--orange);
+}
+
+p.thankyou {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+p.thanks-description {
+  max-width: 30ch;
+  align-self: center;
+  color: var(--light-grey);
+}
+
+/* media query for desktop, tablets */
+
+@media screen and (min-width: 800px) {
+  div.card, div.success-card {
+    padding: 3rem;
+    max-width: 430px;
+  }
+}

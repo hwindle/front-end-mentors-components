@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import './rating.css';
+import successImg from '../assets/images/illustration-thank-you.svg';
 
 function Rating() {
   const initialRatingText =
@@ -45,8 +47,8 @@ function Rating() {
       </button>
     </div>
       : 
-      <div className="card">
-        <img className='success-img' />
+      <div className='success-card'>
+        <img className='success-img' src={successImg} />
         <p className='score-selection'>You selected {ratingNum} out of 5</p>
         <p className='thankyou'>Thank you!</p>
         <p className='thanks-description'>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
