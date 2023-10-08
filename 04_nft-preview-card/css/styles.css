@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Outfit;
+  src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-col: hsl(215, 32%, 27%);
+
+  font-size: 18px;
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
