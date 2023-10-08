@@ -1,3 +1,9 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Outfit;
   src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf');
@@ -10,6 +16,166 @@
   --card-bg: hsl(216, 50%, 16%);
   --line-col: hsl(215, 32%, 27%);
 
+  --default-padding: 1.6rem;
+
   font-size: 18px;
   font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--soft-blue); }
+
+body {
+  background-color: var(--main-bg);
+  color: white;
+}
+
+div.card {
+  width: 355px;
+  max-width: 90%;
+  margin: 2rem auto;
+  background-color: var(--card-bg);
+  padding: var(--default-padding);
+  border-radius: 15px;
+}
+
+figure > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a > figure:hover {
+  background-color: hsla(178, 100%, 50%, 45%);
+  background-image: url('../images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 7px;
+}
+
+a > figure > img:hover {
+  mix-blend-mode: screen;
+}
+
+figcaption {
+  font-size: 1.6rem;
+  line-height: 3;
+  text-align: left;
+  font-weight: 600;
+}
+
+a > figcaption {
+  color: white;
+}
+
+a > figcaption:hover {
+  color: var(--cyan);
+}
+
+p.item-description {
+  color: var(--soft-blue);
+  /* padding-top: var(--default-padding); */
+  padding-bottom: var(--default-padding);
+}
+
+div.prices-flex {
+  padding-bottom: var(--default-padding);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.price, p.time-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.price {
+  color: var(--cyan);
+  font-weight: 400;
+}
+
+p.time-left {
+  padding-top: 0.2rem;
+  color: var(--soft-blue);
+}
+
+p.price > span.currency-logo {
+  background-image: url('../images/icon-ethereum.svg');
+  display: block;
+  width: 0.7rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+p.price > abbr {
+  text-decoration: none;
+  margin-left: 5px;
+  cursor: help;
+}
+
+p.time-left > span.time-logo {
+  background-image: url('../images/icon-clock.svg');
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+div.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--line-col);
+}
+
+footer {
+  margin-top: var(--default-padding);
+  display: flex;
+  align-items: center;
+}
+
+div.avatar, div.creator {
+  display: inline-block;
+}
+
+div.avatar {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 100px;
+  background-image: url('../images/image-avatar.png');
+  background-size: contain;
+  margin-right: 1rem;
+}
+
+div.creator {
+  color: var(--soft-blue);
+}
+
+a.author {
+  color: white;
+}
+
+a.author:hover {
+  color: var(--cyan);
+}
+
+/* desktop, tablet media query */
+
+@media screen and (min-width: 800px) {
+  div.card {
+    width: 375px;
+  }
 }
