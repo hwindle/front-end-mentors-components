@@ -1,0 +1,27 @@
+/* import font here */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --v-pale-blue: hsl(225, 100%, 98%);
+  --grey-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  /* fonts in weights 500, 700, 900 */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--pale-blue);
+}
+
+div.card {
+  background-color: var(--v-pale-blue);
+}
